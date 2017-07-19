@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>View Customers</title>
+ <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+ </head>
+ <style type="text/css">
+   .mypink-gradient {
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #000000 0%, #ca293e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #000000 0%, #ca293e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #000000 0%, #ca293e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ca293e',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+
+ </style>
+
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark fixed-top mypink-gradient">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/indianzaykat.png" style="height: 35px;width: 70px;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">Create Poll<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">View Polls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best-features">Customer Entry</a>
+                    </li>
+                    <li class="nav-item stylish-color-dark">
+                        <a class="nav-link" href="#contact">View Customers</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+<main>
+<div class="container mt-5">
+    <div class="row">
+        <div class="jumbotron col-md-12 pb-1 pt-1">
+            <div class="md-form wow fadeInDown form-inline pb-0 mb-0">
+                <i class="fa fa-tag prefix"></i>
+                <li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle ml-5" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zayka</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" id="Executive" onclick="myfunct1(this.id);">Executive</a>
+                        <a class="dropdown-item" id="Health" onclick="myfunct1(this.id);">Health</a>
+                        <a class="dropdown-item" id="Student" onclick="myfunct1(this.id);">Student</a>
+                    </div>
+                </li>
+                <li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a class="dropdown-item" id="Lunch" onclick="myfunct2(this.id);">Lunch</a>
+                        <a class="dropdown-item" id="Dinner" onclick="myfunct2(this.id);">Dinner</a>
+                        <a class="dropdown-item" id="Both" onclick="myfunct2(this.id);">Both</a>
+                    </div>
+                </li>
+            <div class="form-inline waves-effect waves-light ml-5">
+                <input class="form-control" type="text" placeholder="Search"><i class="fa fa-search"></i>
+            </div>
+
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <div class="table-responsive">
+           <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>email</th>
+                  <th>address</th>
+                  <th>Contact</th>
+                  <th>Alternate Contact</th>
+                  <th>Zayka</th>
+                  <th>Type</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Marknajkn dhcsjnmedrfg</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>Jacob</td>
+                  <td>asdfghjmkl qwertyuiop</td>
+                  <td>@fat</td>
+                  <td>Jacob</td>
+                  <td><button class="btn btn-sm blue"><i class="fa fa-pencil"></i></button></td>
+                  <td><button class="btn btn-sm red"><i class="fa fa-trash"></i></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>Jacob</td>
+                  <td>asdfghjmkl qwertyuiop</td>
+                  <td>@fat</td>
+                  <td>Jacob</td>
+                  <td><button class="btn btn-sm blue"><i class="fa fa-pencil"></i></button></td>
+                  <td><button class="btn btn-sm red"><i class="fa fa-trash"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</main>
+<footer>
+    
+</footer>
+    <!-- Start your project here-->
+
+    <!-- /Start your project here-->
+    
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript">
+        function myfunct1(id1) {
+                document.getElementById("dropdownMenu1").innerHTML = document.getElementById(id1).innerHTML;
+            }
+            function myfunct2(id2) {
+                document.getElementById("dropdownMenu2").innerHTML = document.getElementById(id2).innerHTML;
+            }
+            function myfunct3(id) {
+                document.getElementById("dropdownMenu3").innerHTML = document.getElementById(id).innerHTML;
+            }
+
+    </script>
+    
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+</body>
+
+</html>

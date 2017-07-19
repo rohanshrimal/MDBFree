@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/indianzayka.png">
+    <title>Vote</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+   
+</head>
+<style type="text/css">
+   .mypink-gradient {
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #000000 0%, #ca293e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #000000 0%, #ca293e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #000000 0%, #ca293e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ca293e',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #ca293e;
+}
+\
+ </style>
+
+<body>
+    <main>
+        <div class="container">
+            <!--Panel-->
+            <div class="card">
+                <div class="card-header flex-center">
+                    <img src="img/indianzayka.png" style="width: 230px;height: 140px;">
+                </div>
+                <div class="card-header mypink-gradient white-text">
+                    <h1 class="h1-responsive">
+                    Hello!
+                    </h1>
+                    <h4>Please vote on today's poll:</h3>
+                </div>
+                <div class="card-block">
+                    <h4 class="card-title"><strong>dfg dfgh rty ucv bfgh ert yvb nfgh rtg dfgh rty ucv bfghg dfgh rty ucv bfghg dfgh rty ucv bfgh Question?</strong></h4>
+                    <div class="funkyradio col-md-3">
+                        <div class="funkyradio-danger">
+                            <input type="radio" name="radio" id="radio1"/>
+                            <label for="radio1"><strong>First Option </strong></label>
+                        </div>
+                        <div class="funkyradio-danger">
+                            <input type="radio" name="radio" id="radio2"/>
+                            <label for="radio2"><strong>Second Option</strong></label>
+                        </div>
+                        <div class="funkyradio-danger">
+                            <input type="radio" name="radio" id="radio3" />
+                            <label for="radio3"><strong>Third Option</strong></label>
+                        </div>
+                        <div class="funkyradio-danger">
+                            <input type="radio" name="radio" id="radio4" />
+                            <label for="radio4"><strong>Fourth Option</strong></label>
+                        </div>
+                        <div class="funkyradio-danger">
+                            <input type="radio" name="radio" id="radio5" />
+                            <label for="radio5"><strong>Fifth Option</strong></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                <small>
+                    <p>Indian Zayka : Best Tiffin Service in Indore<br>
+                    Call us: 0731- 2566333 or 8989505618</p>
+                </small>
+                </div>
+            </div>
+            <!--/.Panel-->
+        </div>
+    </main>
+</body>
+   <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</html>

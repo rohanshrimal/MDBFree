@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>View Customers</title>
+ <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+ </head>
+ <style type="text/css">
+   .mypink-gradient {
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #000000 0%, #ca293e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #000000 0%, #ca293e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #000000 0%, #ca293e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ca293e',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+
+ </style>
+
+<body>
+<div id="mdb-preloader" class="flex-center">
+    <div id="preloader-markup">
+    </div>
+</div>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark fixed-top mypink-gradient">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/indianzayka.png" style="height: 35px;width: 70px;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">Create Poll<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link stylish-color-dark" href="#about">View Polls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best-features">Customer Entry</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#contact">View Customers</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+<main>
+<div class="container mt-5">
+<div class="row">
+        <div class="jumbotron col-md-12 pb-1 pt-1"><h1 class="text-center display-4">POLLS</h1>
+  </div>
+</div>
+    <div class="row"> 
+        <div class="jumbotron col-md-12 pb-1 pt-1">
+            <div class="md-form wow fadeInDown form-inline pb-0 mb-0">
+                <i class="fa fa-tag prefix"></i>
+                <li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle ml-5" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zayka</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" id="Executive" onclick="myfunct1(this.id);">Executive</a>
+                        <a class="dropdown-item" id="Health" onclick="myfunct1(this.id);">Health</a>
+                        <a class="dropdown-item" id="Student" onclick="myfunct1(this.id);">Student</a>
+                    </div>
+                </li>
+                <li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a class="dropdown-item" id="Lunch" onclick="myfunct2(this.id);">Lunch</a>
+                        <a class="dropdown-item" id="Dinner" onclick="myfunct2(this.id);">Dinner</a>
+                        <a class="dropdown-item" id="Both" onclick="myfunct2(this.id);">Both</a>
+                    </div>
+                </li>
+                <li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Poll Status</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                        <a class="dropdown-item" id="Open" onclick="myfunct3(this.id);">Open</a>
+                        <a class="dropdown-item" id="Closed" onclick="myfunct3(this.id);">Closed</a>
+                        <a class="dropdown-item" id="Mail" onclick="myfunct3(this.id);">Mail</a>
+                    </div>
+                </li>
+                <div class="button btn-group btn-lg ml-5 white-text" style="background-color: #ca293e;">GO!</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+                
+        <!--Panel-->
+        <div class="card">
+            <div class="card-header white-text" style="background-color: #ca293e;">
+                <span class="badge badge-default">Default</span>
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-danger">Danger</span>
+            </div>
+            <div class="card-block">
+                <h4 class="card-title">wert erty uc vsd fge rtyf gh Question?
+                <button class="btn btn-md red ml-5"><i class="fa fa-trash"></i></button>
+                <button class="btn btn-md blue"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-md green"><i class="fa fa-envelope"></i></button>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                  </label>
+                  </div>
+
+                </h4>
+
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>     
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+               
+            </div>
+            <div class="card-footer text-muted white-text" style="background-color: #ca293e;">
+                <p>2 days ago</p>
+            </div>
+        </div>
+        <!--/.Panel-->
+      </div>  
+    </div>
+</div>
+</main>
+<footer>
+    
+</footer>
+    <!-- Start your project here-->
+
+    <!-- /Start your project here-->
+    
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript">
+        function myfunct1(id1) {
+                document.getElementById("dropdownMenu1").innerHTML = document.getElementById(id1).innerHTML;
+            }
+            function myfunct2(id2) {
+                document.getElementById("dropdownMenu2").innerHTML = document.getElementById(id2).innerHTML;
+            }
+            function myfunct3(id) {
+                document.getElementById("dropdownMenu3").innerHTML = document.getElementById(id).innerHTML;
+            }
+           
+    </script>
+    
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
+       $(function () {
+    // Get the context of the canvas element we want to select
+    var option = {
+    responsive: true,
+    };
+            var data = [
+    {
+        value: 300,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+    },
+    {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+    },
+    {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+    }
+]
+ var ctx = document.getElementById("myChart").getContext('2d');
+
+ var myPieChart = new Chart(ctx).Pie(data,option);
+ var myLineChart = new Chart(ctx).Line(data, option); //'Line' defines type of the chart.
+    
+
+});
+    </script>
+
+
+</body>
+
+</html>
